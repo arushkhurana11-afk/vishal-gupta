@@ -505,7 +505,7 @@ body, html {
         width: 70%;
     }
     .hero-left-col, .hero-right-col {
-        width: 280px;
+        width: 300px;
     }
     .bento-grid {
         grid-template-columns: 1fr;
@@ -521,34 +521,48 @@ body, html {
 @media (max-width: 768px) {
     .page-content {
         padding: 20px;
-        position: relative; 
-        height: auto;
         min-height: 100vh;
     }
     .pill-nav {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
     .hero-card {
         height: auto;
         min-height: 80vh;
-        align-items: flex-start;
-    }
-    .hero-bg-text {
-        top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 20px;
+        gap: 60px; /* Forces spacing between the top paragraph, the portrait, and the bottom paragraph */
     }
     .hero-overlay-content {
-        position: relative;
-        flex-direction: column;
-        gap: 300px;
+        display: contents;
+    }
+    .hero-left-col {
+        order: 1;
+        width: 100%;
+        max-width: 400px;
         align-items: center;
         text-align: center;
-        padding: 40px 20px;
     }
     .portrait-container {
-        height: 50%;
-        bottom: 30%;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        width: 100%;
+        max-width: 400px;
+        height: 400px;
+        order: 2;
+        margin: 0; /* Let the flex gap handle the spacing */
     }
     .hero-right-col {
+        order: 3;
+        width: 100%;
+        max-width: 400px;
         align-items: center;
         text-align: center;
     }
@@ -557,5 +571,40 @@ body, html {
     }
     .bento-card {
         padding: 30px;
+    }
+    .contact-card {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-content {
+        padding: 10px;
+    }
+    .hero-card {
+        padding: 40px 15px;
+        gap: 50px;
+    }
+    .portrait-container {
+        height: 350px;
+        margin: 0;
+    }
+    .bento-card {
+        padding: 25px 20px;
+    }
+    .intro-card .massive-name {
+        font-size: 3rem;
+    }
+    .contact-info h1 {
+        font-size: 2.8rem;
+    }
+    .c-method {
+        padding: 15px 20px;
+    }
+    .pill-nav {
+        padding: 10px 15px;
+    }
+    .nav-item {
+        font-size: 0.85rem;
     }
 }
