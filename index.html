@@ -11,252 +11,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- The fixed background canvas -->
-    <canvas id="animation-canvas"></canvas>
 
     <!-- The scrolling content container -->
     <div class="scroll-container">
         <div class="page-content">
-            <!-- Header / Nav -->
-            <header class="top-nav">
-                <div class="nav-left">UI/UX & WEB DESIGNER</div>
-                <div class="nav-right">CREATIVE PORTFOLIO</div>
-            </header>
+            <nav class="pill-nav">
+                <a href="index.html" class="nav-item active">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="#" class="nav-item">My Work</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
 
-            <!-- Hero Section -->
-            <section class="hero-section">
-                <!-- Large background text overlaying the canvas -->
-                <h1 class="hero-title">PORTFOLIO</h1>
-                
-                <div class="hero-content">
-                    <div class="hero-left">
-                        <h2>I DESIGN DIGITAL<br>EXPERIENCES THAT<br>INSPIRE & CONNECT</h2>
-                        <div class="badge">
-                            <span>AVAILABLE FOR PROJECTS</span>
-                            <span class="icon">+</span>
-                        </div>
-                        <div class="signature">Vishal Gupta</div>
-                    </div>
-                    
-                    <div class="hero-right">
-                        <p>I'm a UI/UX and Web Designer<br>crafting elegant, functional<br>and user-centered digital<br>experiences.</p>
-                        <div class="location-badge">
-                            <div class="loc-text">
-                                <span>BASED IN ANY CITY</span>
-                                <span>WORKING WORLDWIDE</span>
-                            </div>
-                            <div class="loc-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Selected Projects -->
-            <section class="projects-section section-bg">
-                <div class="section-header">
-                    <h3 class="section-label">SELECTED PROJECTS <span>+</span></h3>
-                    <a href="#" class="view-all">VIEW ALL PROJECTS &rarr;</a>
-                </div>
-                
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <span class="p-num">01</span>
-                            <div class="p-info">
-                                <h4>VELVET STUDIO</h4>
-                                <p>Branding & Web Design</p>
-                            </div>
-                        </div>
-                        <div class="card-image img-1">
-                            <h3>Elevating Brands<br>with Purpose</h3>
-                        </div>
-                        <div class="card-tags">
-                            <span>BRANDING</span>
-                            <span>WEB DESIGN</span>
-                            <span>UI/UX</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <span class="p-num">02</span>
-                            <div class="p-info">
-                                <h4>AURORA SHOP</h4>
-                                <p>E-Commerce Design</p>
-                            </div>
-                        </div>
-                        <div class="card-image img-2">
-                            <h3>Timeless Pieces<br>Modern Living</h3>
-                        </div>
-                        <div class="card-tags">
-                            <span>UI/UX</span>
-                            <span>E-COMMERCE</span>
-                            <span>WEB DESIGN</span>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="card-header">
-                            <span class="p-num">03</span>
-                            <div class="p-info">
-                                <h4>MINDSPACE</h4>
-                                <p>Landing Page Design</p>
-                            </div>
-                        </div>
-                        <div class="card-image img-3">
-                            <h3>Focus<br>Create<br>Elevate</h3>
-                        </div>
-                        <div class="card-tags">
-                            <span>LANDING PAGE</span>
-                            <span>UI/UX</span>
-                            <span>WEB DESIGN</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Process & Tools -->
-            <section class="process-tools-section section-bg">
-                <div class="process-block">
-                    <h3 class="section-label">MY PROCESS <span>+</span></h3>
-                    <div class="process-content">
-                        <div class="process-list">
-                            <div class="process-item">
-                                <span class="num">01</span>
-                                <div class="p-text">
-                                    <h5>DISCOVER</h5>
-                                    <p>Understanding your goals,<br>audience and vision.</p>
-                                </div>
-                            </div>
-                            <div class="process-item">
-                                <span class="num">02</span>
-                                <div class="p-text">
-                                    <h5>DEFINE</h5>
-                                    <p>Research, insights and<br>strategy development.</p>
-                                </div>
-                            </div>
-                            <div class="process-item">
-                                <span class="num">03</span>
-                                <div class="p-text">
-                                    <h5>DESIGN</h5>
-                                    <p>Crafting wireframes,<br>layouts and visual UI.</p>
-                                </div>
-                            </div>
-                            <div class="process-item">
-                                <span class="num">04</span>
-                                <div class="p-text">
-                                    <h5>DEVELOP</h5>
-                                    <p>Bringing the design to life<br>with clean, responsive code.</p>
-                                </div>
-                            </div>
-                            <div class="process-item">
-                                <span class="num">05</span>
-                                <div class="p-text">
-                                    <h5>DELIVER</h5>
-                                    <p>Testing, optimization and<br>launch with care.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="process-image">
-                            <!-- Visual placeholder for the flower -->
-                            <div class="flower-placeholder"></div>
-                            <p class="flower-caption">A thoughtful<br>process for<br>meaningful<br>results.</p>
-                        </div>
-                    </div>
+            <main class="hero-card">
+                <!-- Center Portrait -->
+                <div class="portrait-container">
+                    <h2 class="portfolio-text">
+                        <span class="letter letter-1">P</span>
+                        <span class="letter letter-2">o</span>
+                        <span class="letter letter-3">r</span>
+                        <span class="letter letter-4">t</span>
+                        <span class="letter letter-5">f</span>
+                        <span class="letter letter-6">o</span>
+                        <span class="letter letter-7">l</span>
+                        <span class="letter letter-8">i</span>
+                        <span class="letter letter-9">o</span>
+                    </h2>
+                    <img src="frames/frame (1).jpg" alt="Portrait" class="portrait-image">
                 </div>
 
-                <div class="tools-block">
-                    <h3 class="section-label">TOOLS I USE <span>+</span></h3>
-                    <div class="tools-grid">
-                        <div class="tool-item"><span class="t-icon">F</span> FIGMA</div>
-                        <div class="tool-item"><span class="t-icon">W</span> WEBFLOW</div>
-                        <div class="tool-item"><span class="t-icon">Xd</span> ADOBE XD</div>
-                        <div class="tool-item"><span class="t-icon">Fr</span> FRAMER</div>
-                        <div class="tool-item"><span class="t-icon">Ps</span> PHOTOSHOP</div>
-                        <div class="tool-item"><span class="t-icon">N</span> NOTION</div>
-                        <div class="tool-item"><span class="t-icon">Ai</span> ILLUSTRATOR</div>
-                        <div class="tool-item"><span class="t-icon">#</span> SLACK</div>
+                <!-- Overlay Info -->
+                <div class="hero-overlay-content">
+                    <div class="hero-left-col">
+                        <p>I create interfaces that blend function with emotion, crafting digital experiences that feel intuitive, seamless, and meaningful.</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/vishalgupta57" target="_blank" class="social-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/iamvishalgupt" target="_blank" class="social-icon">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                        </div>
                     </div>
-                    <p class="tools-footer">& MORE GREAT TOOLS</p>
-                </div>
-            </section>
 
-            <!-- Testimonials -->
-            <section class="testimonials-section section-bg">
-                <h3 class="section-label">KIND WORDS <span>+</span></h3>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card">
-                        <span class="quote-icon">"</span>
-                        <p>Vishal is incredibly talented, creative<br>and detail-oriented. He transformed<br>our ideas into a beautiful, high-converting<br>website.</p>
-                        <div class="t-author">
-                            <div class="t-avatar"></div>
-                            <div class="t-info">
-                                <h6>SOFIA L.</h6>
-                                <span>FOUNDER, VELVET STUDIO</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <span class="quote-icon">"</span>
-                        <p>Working with Vishal was a smooth<br>and inspiring experience. He truly<br>cares about delivering the best results.</p>
-                        <div class="t-author">
-                            <div class="t-avatar"></div>
-                            <div class="t-info">
-                                <h6>DANIEL R.</h6>
-                                <span>CEO, AURORA SHOP</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card">
-                        <span class="quote-icon">"</span>
-                        <p>His layouts are not only stunning<br>but also highly functional. I highly<br>recommend him!</p>
-                        <div class="t-author">
-                            <div class="t-avatar"></div>
-                            <div class="t-info">
-                                <h6>JAMES T.</h6>
-                                <span>MARKETING DIRECTOR</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer class="site-footer section-bg">
-                <div class="footer-left">
-                    <h2>LET'S CREATE<br>SOMETHING</h2>
-                    <h2 class="signature-large">Amazing</h2>
-                </div>
-                <div class="footer-right">
-                    <div class="f-box open-projects">
-                        <p class="f-title">I'M CURRENTLY OPEN<br>FOR NEW PROJECTS</p>
-                        <p class="f-desc">Let's build something impactful<br>and beautiful together.</p>
-                        <a href="https://wa.me/917355937624" target="_blank" class="btn-message">SEND ME A MESSAGE <span>+</span></a>
-                    </div>
-                    <div class="f-box f-links">
-                        <a href="#">✉ thevishal1711@gmail.com</a>
-                        <a href="https://instagram.com/iamvishalgupt" target="_blank" style="display: flex; align-items: center; gap: 8px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                            @IAMVISHALGUPT
+                    <div class="hero-right-col">
+                        <p>Merging design thinking with human insight to create digital experiences that don't just look great — they perform effortlessly.</p>
+                        <a href="contact.html" class="btn-talk">
+                            Let's Talk 
+                            <span class="arrow">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </span>
                         </a>
-                        <p>📍 ANY CITY, ANYWHERE</p>
-                    </div>
-                    <div class="f-box f-image" style="background-image: url('profile.jpg'); background-size: cover; background-position: center;">
                     </div>
                 </div>
-            </footer>
-            
-            <div class="footer-bottom section-bg">
-                <p>THANK YOU FOR VISITING <span>+</span></p>
-            </div>
+            </main>
         </div>
     </div>
-    
-    <script src="script.js"></script>
+
 </body>
 </html>
