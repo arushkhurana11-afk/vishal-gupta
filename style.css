@@ -15,9 +15,10 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
     background-color: var(--bg-color);
     color: var(--text-main);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
 }
@@ -491,6 +492,26 @@ body, html {
     color: var(--text-muted);
     font-weight: 500;
     line-height: 1.4;
+}
+
+/* Return to Top Link */
+.return-to-top {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 40px auto 10px auto;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.return-to-top:hover {
+    color: #FFF;
+    transform: translateY(-5px);
 }
 
 /* Responsive */
